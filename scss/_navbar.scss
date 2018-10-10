@@ -19,6 +19,7 @@ nav {
             padding: 1em; 
             color: $first-color;
             text-decoration: none; 
+            text-transform: uppercase;
             &:hover:not(.no-hover) {
                background-color: $fifth-color; 
             }
