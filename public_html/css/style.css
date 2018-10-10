@@ -344,7 +344,7 @@ nav {
         text-decoration: none;
         text-transform: uppercase; }
         nav ul li a:hover:not(.no-hover) {
-          background-color: #597273; }
+          color: #597273; }
         nav ul li a img {
           height: 6em;
           width: auto;

@@ -21,7 +21,7 @@ nav {
             text-decoration: none; 
             text-transform: uppercase;
             &:hover:not(.no-hover) {
-               background-color: $fifth-color; 
+            color: $fifth-color; 
             }
             img {
                height: 6em;
