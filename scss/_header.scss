@@ -1,0 +1,26 @@
+/*==== HEADER =====*/
+
+header{
+   height: 50vh;
+   justify-content: center;
+   align-items: center;
+   color: $first-color; 
+   position: relative;
+   &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url(../img/lights.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+   }
+}
+
+.jumbotron {
+   text-align: center;
+   font-size: $h1-font-size;
+}

@@ -320,5 +320,52 @@ h3 {
   font-family: "Didact+Gothic", arial, sans-serif; }
 
 /*==== NAVBAR =====*/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    nav ul li {
+      display: inline; }
+      nav ul li a {
+        display: inline-block;
+        padding: 1em;
+        color: #E7BFA2;
+        text-decoration: none; }
+      nav ul li :hover {
+        background-color: #597273; }
+
+/*==== HEADER =====*/
+header {
+  height: 50vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #E7BFA2;
+  position: relative; }
+  header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../img/lights.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1; }
+
+.jumbotron {
+  text-align: center;
+  font-size: 2.1875em; }
+
 /*==== MAIN =====*/
 /*==== FOOTER =====*/
