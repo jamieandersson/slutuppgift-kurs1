@@ -340,15 +340,12 @@ nav {
         padding: 1em;
         color: #E7BFA2;
         text-decoration: none; }
+        nav ul li a:hover:not(.no-hover) {
+          background-color: #597273; }
         nav ul li a img {
           height: 8em;
           width: auto;
           vertical-align: middle; }
-      nav ul li :hover {
-        background-color: #597273; }
-
-.logo:hover {
-  background-color: transparent !important; }
 
 /*==== HEADER =====*/
 header {

@@ -17,21 +17,17 @@ nav {
             padding: 1em; 
             color: $first-color;
             text-decoration: none; 
+            &:hover:not(.no-hover) {
+               background-color: $fifth-color; 
+            }
             img {
                height: 8em;
                width: auto;
                vertical-align: middle;
             }         
-         } & :hover {
-            background-color: $fifth-color; 
-         }
-         
+         } 
       }
    }
-
 }
 
   
-.logo:hover {
-   background-color: transparent !important;
-}
