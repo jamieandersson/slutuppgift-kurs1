@@ -350,6 +350,28 @@ nav {
           width: auto;
           vertical-align: middle; }
 
+#menu-icon {
+  float: right;
+  display: block; }
+
+.topnav.dropped ul li a {
+  display: block;
+  float: none; }
+
+.topnav.dropped #menu-icon {
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.topnav ul li a {
+  display: none; }
+
+@media screen and (min-width: 960px) {
+  #menu-icon {
+    display: none; }
+
+  .topnav ul li a {
+    display: inline-block; } }
 /*==== HEADER =====*/
 header {
   height: 50vh;
@@ -375,7 +397,8 @@ header {
 
 .jumbotron {
   text-align: center;
-  font-size: 2.1875em; }
+  font-size: 2.1875em;
+  padding: 4em; }
 
 /*==== MAIN =====*/
 body {
