@@ -1,3 +1,4 @@
+/*==== MASTER =====*/
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -302,3 +303,22 @@ template {
  */
 [hidden] {
   display: none; }
+
+/*==== GLOBAL =====*/
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Didact+Gothic", arial, sans-serif; }
+
+h1, h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+h3 {
+  font-family: "Didact+Gothic", arial, sans-serif; }
+
+/*==== NAVBAR =====*/
+/*==== MAIN =====*/
+/*==== FOOTER =====*/
