@@ -9,19 +9,29 @@ nav {
       margin: 0;
       padding: 0;
       list-style: none;
+      justify-content: space-between;
       li {
          display: inline;
          a {
             display:inline-block;
             padding: 1em; 
             color: $first-color;
-            text-decoration: none;          
+            text-decoration: none; 
+            img {
+               height: 8em;
+               width: auto;
+               vertical-align: middle;
+            }         
          } & :hover {
             background-color: $fifth-color; 
          }
+         
       }
    }
 
 }
 
   
+.logo:hover {
+   background-color: transparent !important;
+}

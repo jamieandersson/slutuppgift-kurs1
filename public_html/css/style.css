@@ -329,7 +329,10 @@ nav {
   nav ul {
     margin: 0;
     padding: 0;
-    list-style: none; }
+    list-style: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     nav ul li {
       display: inline; }
       nav ul li a {
@@ -337,8 +340,15 @@ nav {
         padding: 1em;
         color: #E7BFA2;
         text-decoration: none; }
+        nav ul li a img {
+          height: 8em;
+          width: auto;
+          vertical-align: middle; }
       nav ul li :hover {
         background-color: #597273; }
+
+.logo:hover {
+  background-color: transparent !important; }
 
 /*==== HEADER =====*/
 header {
