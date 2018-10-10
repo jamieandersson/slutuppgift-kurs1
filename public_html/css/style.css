@@ -319,6 +319,24 @@ h1, h2 {
 h3 {
   font-family: "Didact+Gothic", arial, sans-serif; }
 
+.wrapper {
+  width: 80vw;
+  margin: 0 auto;
+  padding-top: 2em;
+  padding-bottom: 2em; }
+
+.img-fluid {
+  max-width: 80%;
+  height: auto; }
+
+@media screen and (min-width: 800px) {
+  .wrapper {
+    width: 960px;
+    padding: 2em; }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto; } }
 /*==== NAVBAR =====*/
 nav {
   position: fixed;
@@ -366,7 +384,7 @@ nav {
 .topnav ul li a {
   display: none; }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 800px) {
   #menu-icon {
     display: none; }
 
