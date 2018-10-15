@@ -1,5 +1,4 @@
 /*==== MAIN =====*/
-
 body {
    background-color: $second-color;
    color: $third-color;
@@ -42,33 +41,57 @@ input[type=submit] {
    border-width: 0.2em;
    border-color: $fifth-color;
    padding: 1em 3em;
+   text-align: justify;
+   .box2-header {
+      text-align: center;
+   }
 }
 
 #section1 {
    padding-bottom: 8em;
-   height: 50vh;
+   min-height: 50vh;
 }
 
 #section2 {
    padding-bottom: 5em;
-   height: 50vh;
+   min-height: 50vh;
 }
 
 #section3 {
    padding-top: 5em;
-   height: 50vh;
+   min-height: 50vh;
 }
 
 #section4 {
    padding-bottom: 5em;
-   height: 50vh;
+   min-height: 50vh;
+}
+
+#book-button-container {
+   position: relative;
+   background-image: url(../img/scissors.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+#book-button {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: $first-color;
+   text-decoration: none;
+   color: $second-color;
+   padding: 1em 2em;
+   border-radius: 4px;
 }
 
 
 @media screen and (min-width: 800px) {
    .grid-container {
       display: grid;
-      grid-gap: 6em;
+      grid-gap: 1em;
    }
    
    .col-2 {

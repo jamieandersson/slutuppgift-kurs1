@@ -347,7 +347,7 @@ i {
 
 @media screen and (min-width: 800px) {
   .wrapper {
-    width: 960px;
+    width: 800px;
     padding: 2em; }
 
   .img-fluid {
@@ -471,28 +471,50 @@ input[type=submit] {
   border-style: solid;
   border-width: 0.2em;
   border-color: #597273;
-  padding: 1em 3em; }
+  padding: 1em 3em;
+  text-align: justify; }
+  .box2 .box2-header {
+    text-align: center; }
 
 #section1 {
   padding-bottom: 8em;
-  height: 50vh; }
+  min-height: 50vh; }
 
 #section2 {
   padding-bottom: 5em;
-  height: 50vh; }
+  min-height: 50vh; }
 
 #section3 {
   padding-top: 5em;
-  height: 50vh; }
+  min-height: 50vh; }
 
 #section4 {
   padding-bottom: 5em;
-  height: 50vh; }
+  min-height: 50vh; }
+
+#book-button-container {
+  position: relative;
+  background-image: url(../img/scissors.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+#book-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #E7BFA2;
+  text-decoration: none;
+  color: #1A1615;
+  padding: 1em 2em;
+  border-radius: 4px; }
 
 @media screen and (min-width: 800px) {
   .grid-container {
     display: grid;
-    grid-gap: 6em; }
+    grid-gap: 1em; }
 
   .col-2 {
     grid-template-columns: repeat(2, 1fr); }
