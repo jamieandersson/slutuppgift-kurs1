@@ -364,7 +364,7 @@ nav {
         nav ul li a:hover:not(.no-hover) {
           color: #597273; }
         nav ul li a img {
-          height: 6em;
+          height: 5em;
           width: auto;
           vertical-align: middle; }
 
