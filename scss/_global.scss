@@ -25,7 +25,11 @@ h2 {
    font-family: $heading-font;
    font-weight: 400;
    text-transform: uppercase;
-   padding-bottom: 1.8em;
+   padding-bottom: 1.6em;
+}
+
+#first-h2 {
+   padding-bottom: 0.2em;
 }
 
 h3 {
@@ -49,9 +53,9 @@ i {
    height: auto;
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:1400px) {
    .wrapper {
-      width: 800px;
+      width: 1400px;
       padding: 2em;
    }
 
