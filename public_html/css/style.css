@@ -345,8 +345,9 @@ i {
   padding-bottom: 2em; }
 
 .img-fluid {
-  max-width: 80%;
-  height: auto; }
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto; }
 
 @media screen and (min-width: 1400px) {
   .wrapper {
@@ -355,7 +356,10 @@ i {
 
   .img-fluid {
     max-width: 100%;
-    height: auto; } }
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; } }
 /*==== NAVBAR =====*/
 nav {
   position: fixed;
@@ -403,7 +407,7 @@ nav {
 .topnav ul li a {
   display: none; }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1400px) {
   #menu-icon {
     display: none; }
 
@@ -478,6 +482,16 @@ input[type=submit] {
   .box2 .box2-header {
     text-align: center; }
 
+.grid-container {
+  display: grid;
+  grid-gap: 1em; }
+
+.col-2 {
+  grid-template-columns: 1fr; }
+
+.col-3 {
+  grid-template-columns: 1fr; }
+
 #section1 {
   padding-bottom: 8em;
   min-height: 50vh; }
@@ -499,7 +513,8 @@ input[type=submit] {
   background-image: url(../img/scissors.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  min-height: 30vh; }
 
 #book-button {
   position: absolute;
@@ -509,27 +524,36 @@ input[type=submit] {
           transform: translate(-50%, -50%);
   background-color: #E7BFA2;
   text-decoration: none;
+  text-transform: uppercase;
   color: #1A1615;
+  border-style: solid;
+  border-width: 0.2em;
   padding: 1em 2em;
-  border-radius: 4px; }
+  -webkit-box-shadow: 5px 8px 25px #1A1615;
+          box-shadow: 5px 8px 25px #1A1615; }
+  #book-button:hover {
+    background-color: #597273;
+    color: #F0E4DB; }
 
 #champagne {
   width: 100%; }
 
 @media screen and (min-width: 800px) {
-  .grid-container {
-    display: grid;
-    grid-gap: 1em; }
-
   .col-2 {
     grid-template-columns: repeat(2, 1fr); }
 
   .col-3 {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+
+  #book-button-container {
+    min-height: unset; } }
 /*==== FOOTER =====*/
 footer {
-  background-image: url(../img/lights.jpg);
   padding-top: 6em;
   padding-bottom: 6em;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  background-image: url(../img/lights_black.jpg); }
+  footer p {
+    color: #F0E4DB;
+    text-transform: uppercase; }

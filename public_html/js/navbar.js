@@ -1,14 +1,25 @@
-const breakpoint = $("960px").width();
+const breakpoint = 1400;
 
 let previousWidth = $(window).width();
+var x = document.getElementById("myTopnav");
 
 selectAlphaMode(previousWidth);
 
+function navToggle() {  
+  if (x.className === "topnav") {
+     x.className += " dropped";
+  } else {
+     x.className = "topnav";
+  }
+}
+
 $(window).resize(function() {
   let width = $(window).width();
-
   if ((width < breakpoint && previousWidth >= breakpoint) || (width >= breakpoint && previousWidth < breakpoint)) {
     selectAlphaMode(width);
+    if (x.className === "topnav dropped") {
+      x.className = "topnav"
+    }
   }  
 
   previousWidth = width;
