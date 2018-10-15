@@ -311,13 +311,28 @@ html {
 body {
   font-family: "Didact+Gothic", arial, sans-serif; }
 
-h1, h2 {
+p {
+  font-size: 1.4em;
+  line-height: 1.5em; }
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 2.1875em; }
+
+h2 {
+  font-size: 2.2em;
   font-family: "Playfair Display", serif;
   font-weight: 400;
   text-transform: uppercase; }
 
 h3 {
   font-family: "Didact+Gothic", arial, sans-serif; }
+
+i {
+  font-size: 3em;
+  color: #E7BFA2; }
 
 .wrapper {
   width: 80vw;
@@ -444,10 +459,31 @@ input[type=submit] {
   width: 20%;
   background-color: #E7BFA2; }
 
+.box {
+  border-style: solid;
+  border-width: 0.2em;
+  border-color: #597273;
+  padding-left: 6em;
+  padding-right: 6em; }
+
+#section1 {
+  height: 50vh;
+  padding-bottom: 5em; }
+
+#section2 {
+  height: 50vh; }
+
+#section3 {
+  height: 50vh;
+  padding-top: 5em; }
+
+#section4 {
+  height: 50vh; }
+
 @media screen and (min-width: 800px) {
   .grid-container {
     display: grid;
-    grid-gap: 3em; }
+    grid-gap: 6em; }
 
   .col-2 {
     grid-template-columns: repeat(2, 1fr); }

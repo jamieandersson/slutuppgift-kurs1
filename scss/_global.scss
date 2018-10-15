@@ -8,7 +8,20 @@ body {
    font-family: $body-font;
 }
 
-h1, h2 {
+p {
+   font-size: $p-font-size;
+   line-height: 1.5em;
+}
+
+h1 {
+   font-family: $heading-font;
+   font-weight: 400;
+   text-transform: uppercase;
+   font-size: $h1-font-size;
+}
+
+h2 {
+   font-size: $h2-font-size;
    font-family: $heading-font;
    font-weight: 400;
    text-transform: uppercase;
@@ -16,6 +29,11 @@ h1, h2 {
 
 h3 {
    font-family: $body-font;
+}
+
+i {
+   font-size: 3em;
+   color: $first-color;
 }
 
 .wrapper {
