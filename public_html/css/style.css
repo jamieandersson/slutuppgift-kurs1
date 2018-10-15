@@ -455,3 +455,9 @@ input[type=submit] {
   .col-3 {
     grid-template-columns: repeat(3, 1fr); } }
 /*==== FOOTER =====*/
+footer {
+  background-image: url(../img/lights.jpg);
+  padding-top: 6em;
+  padding-bottom: 6em;
+  width: 100%;
+  text-align: center; }
