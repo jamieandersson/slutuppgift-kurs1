@@ -8,3 +8,17 @@ body {
 h2 {
    color: $first-color;
 }
+
+
+
+@media screen and (min-width: 800px) {
+   .grid-container {
+      display: grid;
+      grid-gap: 3em;
+   }
+   
+   .col-2 {
+      grid-template-columns: repeat(2,1fr);
+   }
+}
+
