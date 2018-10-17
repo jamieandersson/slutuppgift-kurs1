@@ -319,10 +319,10 @@ h1 {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 2.1875em; }
+  font-size: 2em; }
 
 h2 {
-  font-size: 2.2em;
+  font-size: 2em;
   font-family: "Playfair Display", serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -415,7 +415,7 @@ nav {
     display: inline-block; } }
 /*==== HEADER =====*/
 header {
-  height: 50vh;
+  height: 55vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -436,9 +436,12 @@ header {
     background-repeat: no-repeat;
     z-index: -1; }
 
+small {
+  font-size: 0.5em; }
+
 .jumbotron {
   text-align: center;
-  font-size: 2.1875em;
+  font-size: 2em;
   padding: 4em; }
 
 /*==== MAIN =====*/

@@ -1,7 +1,7 @@
 /*==== HEADER =====*/
 
 header{
-   height: 50vh;
+   height: 55vh;
    justify-content: center;
    align-items: center;
    color: $first-color; 
@@ -18,6 +18,10 @@ header{
       background-repeat: no-repeat;
       z-index: -1;
    }
+}
+
+small {
+   font-size: 0.5em;
 }
 
 .jumbotron {
