@@ -23,9 +23,19 @@ input {
    box-sizing: border-box;
 }
 
-input[type=submit] {
+.form-submit {
    width: 20%;
    background-color: $first-color;
+   text-transform: uppercase;
+   color: $second-color;
+   border-style: solid;
+   border-width: 0.2em;
+   padding: 1em 2em;
+   border-radius: 0;
+   &:hover {
+      background-color: $fifth-color;
+      color: $third-color;
+   }
 }
 
 .box {
@@ -46,18 +56,33 @@ input[type=submit] {
    }
 }
 
+.grid-container {
+   display: grid;
+   grid-gap: 1em;
+}
+
+.col-2 {
+   grid-template-columns: 1fr;
+}
+
+.col-3 {
+   grid-template-columns: 1fr;
+}
+
 #section1 {
-   padding-bottom: 8em;
+   padding-bottom: 5em;
    min-height: 50vh;
 }
 
 #section2 {
+   padding-top: 5em;
    padding-bottom: 5em;
    min-height: 50vh;
 }
 
 #section3 {
    padding-top: 5em;
+   padding-bottom: 5em;
    min-height: 50vh;
 }
 
@@ -72,6 +97,7 @@ input[type=submit] {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
+   min-height: 30vh;
 }
 
 #book-button {
@@ -81,9 +107,16 @@ input[type=submit] {
    transform: translate(-50%, -50%);
    background-color: $first-color;
    text-decoration: none;
+   text-transform: uppercase;
    color: $second-color;
+   border-style: solid;
+   border-width: 0.2em;
    padding: 1em 2em;
-   border-radius: 4px;
+   box-shadow: 5px 8px 25px $second-color;
+   &:hover {
+      background-color: $fifth-color;
+      color: $third-color;
+   }
 }
 
 #champagne {
@@ -92,17 +125,17 @@ input[type=submit] {
 
 
 @media screen and (min-width: 800px) {
-   .grid-container {
-      display: grid;
-      grid-gap: 1em;
-   }
-   
+
    .col-2 {
       grid-template-columns: repeat(2,1fr);
    }
 
    .col-3 {
       grid-template-columns: repeat(3,1fr);
+   }
+
+   #book-button-container {
+      min-height: unset;
    }
 }
 

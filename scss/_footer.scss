@@ -1,9 +1,15 @@
 /*==== FOOTER =====*/
 
 footer {
-   background-image: url(../img/lights.jpg);
    padding-top: 6em;
    padding-bottom: 6em;
    width: 100%;
    text-align: center;
+   background-image: url(../img/lights_black.jpg);
+   p {
+      color: $third-color;
+      text-transform: uppercase;
+   }
 }
+   
+   
